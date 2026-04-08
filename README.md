@@ -1,18 +1,11 @@
-\# API Failure Monitor
+# API Failure Monitor
 
+**Description:**
 
+Monitors APIs and automatically logs failures using Node.js and JavaScript. Demonstrates debugging, system analysis, and workflow automation skills.
 
-\*\*Descrição:\*\*  
+## How to use
 
-Monitoramento de APIs com registro de falhas automáticas usando Node.js e JavaScript.
+1. Install Node.js (v16 or higher)
 
-
-
-\## Como usar
-
-
-
-1\. Instalar Node.js
-
-2\. Na pasta do projeto, instalar dependência:
-
+2. Open a terminal in the project folder and install dependency:
