@@ -1,0 +1,20 @@
+[
+    {
+        "api": "https://jsonplaceholder.typicode.com/posts",
+        "status": 200,
+        "message": "OK",
+        "timestamp": "2026-04-08T21:29:31.266Z"
+    },
+    {
+        "api": "https://jsonplaceholder.typicode.com/comments",
+        "status": 200,
+        "message": "OK",
+        "timestamp": "2026-04-08T21:29:31.306Z"
+    },
+    {
+        "api": "https://jsonplaceholder.typicode.com/invalid-endpoint",
+        "status": 404,
+        "message": "Not Found",
+        "timestamp": "2026-04-08T21:29:31.662Z"
+    }
+]
