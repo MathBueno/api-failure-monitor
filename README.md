@@ -1,16 +1,37 @@
-API Failure Monitor
+# 📡 API Failure Monitor
 
-Overview
-API Failure Monitor is a Node.js project designed to monitor services and automatically log failures. Beyond functionality, it’s a playground for experimenting with debugging, system analysis, workflow automation, and integrating different coding approaches, including AI-assisted coding.
+An automated monitoring service that continuously tracks the health of various APIs, detects failures, and logs every incident with detailed diagnostic data (status codes, timestamps, and error messages).
 
-Why I Built It
-This project is part of my journey exploring low-code, no-code, AI-assisted coding, and software engineering principles. It’s meant to turn study into practice, testing ideas and building something tangible along the way.
+## 🧩 The Problem
+In modern distributed systems, APIs can go down silently. Without active observability, technical support and engineering teams only discover outages when users start complaining, leading to longer downtime and poor user experience.
 
-What It Does
+## ✅ The Solution
+This tool actively pings a predefined list of API endpoints at regular intervals. If an endpoint fails or times out, the system immediately logs the failure structure for rapid troubleshooting and alerting.
 
-Monitors APIs and captures failures in real time
-Logs structured information for analysis
-Helps practice automation, debugging, and workflow optimization
+## ⚙️ Tech Stack
+- **Python / Node.js** — Scripting and scheduling logic
+- **HTTP Requests** — API health checking
+- **JSON Logging** — Structured failure tracking
 
-Learning Focus
-The project isn’t just about writing code. It’s about learning by doing, experimenting with different approaches, and understanding how small automation tools can make development faster and more efficient.
+## 📊 Example Log Entry
+```json
+{
+  "endpoint": "https://api.example.com/v1/data",
+  "status": "FAILED",
+  "statusCode": 503,
+  "timestamp": "2026-04-10T14:32:00Z",
+  "error": "Service Unavailable"
+}
+```
+
+## 🚀 How to Run Locally
+1. Clone the repository
+2. Update the `apis.json` file with the endpoints you want to monitor
+3. Install dependencies and run the script
+4. Check the `logs.json` file to review detected failures
+
+## 💼 Skills Demonstrated
+- Proactive observability and health checks
+- API testing and debugging
+- Incident logging automation
+- Technical support and reliability practices
